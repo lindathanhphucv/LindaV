@@ -1,0 +1,332 @@
+body {
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    overflow: hidden;
+}
+    
+    .neon-text {
+        font-size: 2rem;
+        color: #fff;
+        text-shadow: 0 0 5px #ff005e, 0 0 10px #ff005e, 0 0 20px #ff005e, 0 0 40px #ff005e, 0 0 80px #ff005e;
+        animation: glow 2s infinite alternate;
+    }
+    @keyframes glow {
+        0% {
+            text-shadow: 0 0 5px #ff005e, 0 0 10px #ff005e, 0 0 20px #ff005e, 0 0 40px #ff005e, 0 0 80px #ff005e;
+        }
+        100% {
+            text-shadow: 0 0 10px #00d4ff, 0 0 20px #00d4ff, 0 0 40px #00d4ff, 0 0 80px #00d4ff, 0 0 160px #00d4ff;
+        }
+    }
+
+p {
+    font: 300;
+}
+
+.img {
+    border-radius: 20px;
+    height: auto;
+    position: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+}
+nav ul {
+    border-radius: 10px;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    padding:20px;
+    margin:40px;
+    background-color:rgb(97, 143, 235);
+    background-blend-mode: darken;
+    color: rgb(13, 13, 17)
+    
+}
+
+
+nav ul li{
+    margin: 0 10px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    text-wrap: auto;
+}
+
+nav ul li a {
+    text-decoration:none;
+}
+
+nav ul li a:hover {
+    color:rgb(178, 228, 76);
+    background-color:rgba(40, 53, 239, 0.773);
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+}
+h2 {
+    display: block;
+    color: rgb(164, 192, 25);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    text-align: center; /* Ensure the text is centered */
+    margin-top: 0; /* Remove any top margin */
+    margin-bottom: 20px; /* Optional: Adds spacing at the bottom */
+    padding: 0; /* Ensure padding is reset if needed */
+}
+
+p {
+    color:rgb(11, 23, 10);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+   ;
+    font-size: 20px;
+    word-wrap: break-word;
+    margin-left: 10vh;
+    margin-right: 10vh;
+}
+
+h3 {
+    color:rgb(106, 39, 240);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+   ;
+    font-size: 20px;
+    text-align: center;
+}
+
+h4 {
+    color: rgb(38, 42, 30);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+   ;
+    font-size: 20px;
+    font-weight: normal;
+    margin-left: 10vh;
+    margin-right: 10vh;
+}
+/*skills*/
+
+.flex-container {
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px 100px 100px; /* You can adjust this as needed */
+    gap: 30px; /* Spacing between grid items */
+    padding: 0; /* Reset padding */
+    justify-content: center; /* Center the grid horizontally */
+    align-items: center; /* Center the grid vertically */
+    margin-left: auto; /* Centers the container horizontally */
+    margin-right: auto; /* Centers the container horizontally */
+    width: fit-content; /* Ensures the container adjusts to the content width */
+}
+.flex-container img{
+    width:100%;
+    object-fit: cover;
+    }
+
+/*project*/
+
+.project-container{
+    max-width: 100%;
+    display: grid;
+    gap: 40px;
+    grid-template-columns: 150px 200px 205px;
+    justify-content: center; /* Center the grid horizontally */
+    align-items: center; /* Center the grid vertically */
+    margin-left: auto; /* Centers the container horizontally */
+    margin-right: auto; /* Centers the container horizontally */
+    width: fit-content; /* Ensures the container adjusts to the content width */
+}
+
+.project-container img{
+    width: 100%;
+    object-fit:fill;
+    position: relative; 
+
+
+}
+
+.project-container a{
+    text-decoration:none;
+    position: relative;
+}
+
+.project-container h3{
+    position:absolute;
+    bottom:0;
+    margin: 0;
+    background-color: #222;
+    color: white;
+    font-family: "roboto", "sans-serif";
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    padding: 8px 32px;
+    box-sizing: border-box;
+}
+
+.project-container img:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(238, 206, 216, 0.5);
+}
+
+/*contact*/
+
+ /* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #4bc8f5; /* Adjust background color if needed */
+    font-family: Arial, sans-serif;
+}
+
+/* Centering the entire Contact section */
+#Contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Center the wrapper inside the Contact section */
+.wrapper.centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 900px; /* Limit the max width */
+    padding: 20px;
+    background-color: rgb(193, 227, 232);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional for some shadow effect */
+    border-radius: 8px;
+}
+
+/* Styling for the letter article */
+.letter {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* Styling for the side sections */
+.side {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+
+.side p {
+    margin: 10px 0; 
+}
+
+/* Input, textarea, and button styling */
+input, textarea, button {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.6);
+    background-color: #dadad3;
+    border-radius: 4px;
+    font-size: 1rem;
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+}
+
+textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+button {
+    cursor: pointer;
+    font-weight: 500;
+    margin-top: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+input:focus, textarea:focus, button:focus {
+    outline: none;
+}
+ 
+/* background colour */
+body {
+    margin: auto;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    overflow: auto;
+    background: linear-gradient(315deg, rgba(101,0,94,1) 3%, rgba(60,132,206,1) 38%, rgba(48,238,226,1) 68%, rgba(255,25,25,1) 98%);
+    animation: gradient 15s ease infinite;
+    background-size: 400% 400%;
+    background-attachment: fixed;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+.wave {
+    background: rgb(255 255 255 / 25%);
+    border-radius: 1000% 1000% 0 0;
+    position: fixed;
+    width: 200%;
+    height: 12em;
+    animation: wave 10s -3s linear infinite;
+    transform: translate3d(0, 0, 0);
+    opacity: 0.8;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.wave:nth-of-type(2) {
+    bottom: -1.25em;
+    animation: wave 18s linear reverse infinite;
+    opacity: 0.8;
+}
+
+.wave:nth-of-type(3) {
+    bottom: -2.5em;
+    animation: wave 20s -1s reverse infinite;
+    opacity: 0.9;
+}
+
+@keyframes wave {
+    2% {
+        transform: translateX(1);
+    }
+
+    25% {
+        transform: translateX(-25%);
+    }
+
+    50% {
+        transform: translateX(-50%);
+    }
+
+    75% {
+        transform: translateX(-25%);
+    }
+
+    100% {
+        transform: translateX(1);
+    }
+}
